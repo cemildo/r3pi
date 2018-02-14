@@ -4,17 +4,17 @@ block content
   h3 Welcome to #{title}
   div(class="main-container")
     div(class="image-container")
-      div
-        a(href="/basket/add/apple")
-          img(src="/images/apple.jpeg" class="fruit-img")
-      div
-        a(href="/basket/add/banana")
-          img(src="/images/banana.jpg" class="fruit-img")
-      div
-        a(href="/basket/add/orange")
-          img(src="/images/orange.jpg" class="fruit-img")
-      div
-        a(href="/basket/add/papaya")
-          img(src="/images/papaya.jpg" class="fruit-img")
+      a(href="/basket/add/apple")
+        img(src="/images/apple.jpeg" class="fruit-img")
+        span Apple
+      a(href="/basket/add/banana")
+        img(src="/images/banana.jpg" class="fruit-img")
+        span Banana
+      a(href="/basket/add/orange")
+        img(src="/images/orange.jpg" class="fruit-img")
+        span Orange
+      a(href="/basket/add/papaya")
+        img(src="/images/papaya.jpg" class="fruit-img")
+        span Papaya
     div(class="receipt-container")
       include ./basket.jade

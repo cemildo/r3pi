@@ -12,17 +12,39 @@ a {
 }
 
 .image-container{
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+}
+
+.image-container a {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+  text-decoration: transparent;
+}
+
+.image-container a:hover {
+  background: #e3e3e3;
+}
+
+.image-container a span{
+  font-size: 20px;
+  color: black;
+  padding-left: 40px;
 }
 
 .fruit-img{
-  width: 400px;
+  width: 50px;
+}
+
+.receipt{
+  font-size: 20px;
 }
 
 .receipt-container{
-  width:500px;
+  width:30%;
 }
 
 .receipt-title{
