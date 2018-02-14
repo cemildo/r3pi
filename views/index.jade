@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h3 Welcome to #{title}
+  div(class="main-container")
+    div(class="image-container")
+      div
+        a(href="/basket/add/apple")
+          img(src="/images/apple.jpeg" class="fruit-img")
+      div
+        a(href="/basket/add/banana")
+          img(src="/images/banana.jpg" class="fruit-img")
+      div
+        a(href="/basket/add/orange")
+          img(src="/images/orange.jpg" class="fruit-img")
+      div
+        a(href="/basket/add/papaya")
+          img(src="/images/papaya.jpg" class="fruit-img")
+    div(class="receipt-container")
+      include ./basket.jade

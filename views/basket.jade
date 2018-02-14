@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  if error
+    h3(class="receipt-title") #{error}
+  if !error
+    p(class="receipt-title") ONLINE ORDER GMBH
+    p(class="receipt-address") Glattstrasse 9999 Zürich
+    table(class="receipt-sale-items")
+      each val in sale.getItems()
+        tr
+          td= val.getQuantity()
+          td= ' x '
+          td= val.getItem().getName()
+          td= 'à ' + val.getItem().getPrice() + ' ct : '
+          td= val.getTotalPrice()
+    h3(class="receipt-total") Total : #{sale.getTotalPrice()}
+
+    a(href="/basket/reset" class="receipt-cancel")
+      button Cancel
