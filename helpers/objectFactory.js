@@ -15,7 +15,7 @@ export default class Factory {
       case 'papaya':
         return new Papaya();
       default:
-        return `Please add item!`;
+        return `no such an item ${objectName}`;
     }
   }
 }

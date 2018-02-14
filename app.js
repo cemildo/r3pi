@@ -7,7 +7,6 @@ import bodyParser from 'body-parser';
 
 import index from './routes/index';
 import basket from './routes/basket';
-import users from './routes/users';
 
 const app = express();
 
@@ -25,7 +24,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/basket', basket);
-app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
